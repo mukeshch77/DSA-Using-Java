@@ -20,9 +20,9 @@ public class Functions {
 
 
         int num1 = 10;
-        int num2 = 20;
+        int num2 = 400;
         int num3 = 30;
-        int num4 = 40;
+        int num4 = 50;
         // System.out.println("Before swaping :");
         // System.out.println("Num1 : " + num1 + " Num2 : " + num2);
         // f.swap(num1, num2);
