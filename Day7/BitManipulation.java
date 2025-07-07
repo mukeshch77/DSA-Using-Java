@@ -1,6 +1,6 @@
 public class BitManipulation {
     public static void main(String[] args) {
-        printBits(94);
+        // printBits(94);
         // printOddEven(35);
         // int res1 = setIthBit(34, 4);
         // printBits(res1);
@@ -9,9 +9,9 @@ public class BitManipulation {
         // int res3 = unSetIthBit(33, 0);
         // printBits(res3);
         // isPowerOfTwo(34);
-        // int res4 = unSetRightMostSetBit(48);
-        // printBits(res4);
-        noOfSetBit(943);
+        int res4 = unSetRightMostSetBit(58);
+        printBits(res4);
+        // noOfSetBit(943);
 
     }
 
