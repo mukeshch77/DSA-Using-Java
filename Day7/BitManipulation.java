@@ -11,7 +11,7 @@ public class BitManipulation {
         // isPowerOfTwo(34);
         // int res4 = unSetRightMostSetBit(48);
         // printBits(res4);
-        noOfSetBit(94);
+        noOfSetBit(943);
 
     }
 

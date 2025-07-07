@@ -20,7 +20,7 @@ public class Functions {
 
 
         int num1 = 10;
-        int num2 = 400;
+        int num2 = 40;
         int num3 = 30;
         int num4 = 50;
         // System.out.println("Before swaping :");
