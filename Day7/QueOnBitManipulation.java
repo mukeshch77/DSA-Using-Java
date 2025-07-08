@@ -1,8 +1,8 @@
 public class QueOnBitManipulation {
     public static void main(String[] args) {
         // printBits(53);
-        // int res1 = clearLSB(53, 4);
-        // printBits(res1);
+        int res1 = clearLSB(53, 5);
+        printBits(res1);
         // int res2 = clearMSB(53, 4);
         // printBits(res2);
         // int res3 = clearMSBExclusive(53, 4);
