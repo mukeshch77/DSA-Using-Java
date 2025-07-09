@@ -5,8 +5,12 @@ public class SortingAlgorithms {
         // insertionSort(arr);   
         // printArray(arr, " Sorted array");
         
+        // printArray(arr, " Original array");
+        // selectionSort(arr);   
+        // printArray(arr, " Sorted array");
+        
         printArray(arr, " Original array");
-        selectionSort(arr);   
+        biDirectionalselectionSort(arr);   
         printArray(arr, " Sorted array");
     }
 
@@ -55,7 +59,7 @@ public class SortingAlgorithms {
     public static void biDirectionalselectionSort(int arr[]){
         int n = arr.length;
         int k = n-1;
-        for(int i = 1; i < k; i++){
+        for(int i = 0; i < k; i++){
             int minEl = arr[i];
             int minIndex = i;
             int maxEl = arr[i];
