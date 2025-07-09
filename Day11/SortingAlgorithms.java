@@ -1,10 +1,20 @@
-package Day11;
-
 public class SortingAlgorithms {
     public static void main(String[] args) {
         int arr[] = {2, 7, 1, 5, 0, 1, 12};
-        insertionSort(arr);
-        
+        printArray(arr, " Original array");
+        insertionSort(arr);   
+        printArray(arr, " Sorted array");
+    }
+
+    public static void printArray(int arr[], String message){
+        System.out.println("printing" + message);
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i]);
+            if (i!=arr.length-1) {
+                System.out.print(",");
+            }
+        }
+        System.out.println();
     }
 
     public static void insertionSort(int arr[]){
