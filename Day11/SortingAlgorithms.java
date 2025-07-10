@@ -13,13 +13,13 @@ public class SortingAlgorithms {
         // biDirectionalselectionSort(arr);
         // printArray(arr, " Sorted array");
 
-        printArray(arr, " Original array");
-        bubbleSort(arr);
-        printArray(arr, " Sorted array");
-        
         // printArray(arr, " Original array");
-        // brickSort(arr);
+        // bubbleSort(arr);
         // printArray(arr, " Sorted array");
+        
+        printArray(arr, " Original array");
+        brickSort(arr);
+        printArray(arr, " Sorted array");
     }
 
     public static void printArray(int arr[], String message) {
@@ -123,5 +123,31 @@ public class SortingAlgorithms {
         }
     }
 
-    
+    public static void brickSort(int arr[]) {
+        int n = arr.length;
+        boolean isSorted = false;
+
+        while (!isSorted) {
+            boolean flag = false;
+            // even index swapping
+            for (int i = 0; i <= n - 2; i += 2) {
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                    flag = true;
+                }
+
+            }
+            // odd index swapping
+            for (int i = 1; i <= n - 2; i += 2) {
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                    flag = true;
+                }
+
+            }
+            if (flag == false) {
+                isSorted = true;
+            }
+        }
+    }
 }
