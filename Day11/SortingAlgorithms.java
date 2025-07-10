@@ -73,6 +73,10 @@ public class SortingAlgorithms {
                     maxIndex = j;
                 }
             }
+            System.out.println("Max ele -->" + maxEl+ " at index "+maxIndex);
+            System.out.println("swapped with index -->" + k);
+            System.out.println("Min ele -->" + minEl+ " at index "+minIndex);
+            System.out.println("swapped with index -->" + i);
             //swap min elements
             swap(arr, i, minIndex);
             //swap max elements
@@ -81,6 +85,7 @@ public class SortingAlgorithms {
             }else{
                 swap(arr, k, maxIndex);
             }
+            printArray(arr, " mid logic");
             k--;
         }
     }
