@@ -17,8 +17,16 @@ public class SortingAlgorithms {
         // bubbleSort(arr);
         // printArray(arr, " Sorted array");
         
+        // printArray(arr, " Original array");
+        // brickSort(arr);
+        // printArray(arr, " Sorted array");
+        
+        // printArray(arr, " Original array");
+        // int res[] = countingSort(arr);
+        // printArray(res, " Sorted array");
+        
         printArray(arr, " Original array");
-        brickSort(arr);
+        radixSort(arr);
         printArray(arr, " Sorted array");
     }
 
@@ -148,6 +156,98 @@ public class SortingAlgorithms {
             if (flag == false) {
                 isSorted = true;
             }
+        }
+    }
+
+    public static int[] countingSort(int arr[]){
+        // find k --> max element
+        int n = arr.length;
+        int k = Integer.MIN_VALUE;
+        int res[] = new int[n];
+
+        for(int i=0; i<n; i++){
+            if (arr[i]>k) {
+                k = arr[i];
+
+            }
+        }
+        if (k==Integer.MIN_VALUE) {
+            System.out.println("Empty value");
+            return res;
+        }
+
+        int countArr[] = new int[k+1];
+
+        // find the frequency
+        for(int i=0; i<n; i++){
+            int index = arr[i];
+            countArr[index]+=1;
+        }
+        // find cumulative frequency
+        for(int i=1; i<=k; i++){
+            countArr[i] += countArr[i-1];
+        }
+        // find the sorted array
+        for(int i=n-1; i>=0; i--){
+            int val = arr[i];
+            // a-- & --a
+            int countVal = --countArr[val];
+            res[countVal] = val;
+        }
+        return res;
+    }
+    
+    public static void countingSortWithDigit(int arr[], int digit){
+        // find k --> max element
+        int n = arr.length;
+        int k = 9;
+        int res[] = new int[n];
+
+        int countArr[] = new int[k+1];
+
+        // find the frequency
+        for(int i=0; i<n; i++){
+            int index = (arr[i]/digit) % 10;
+            countArr[index]+=1;
+        }
+        // find cumulative frequency
+        for(int i=1; i<=k; i++){
+            countArr[i] += countArr[i-1];
+        }
+        // find the sorted array
+        for(int i=n-1; i>=0; i--){
+            int val = arr[i];
+            System.out.println("Value is "+ val);
+            // a-- & --a
+            int countIndex = (arr[i]/digit) % 10;
+            System.out.println("Index in count array "+ countIndex);
+            int countVal = --countArr[countIndex];
+            System.out.println("Element "+ val +" placed at index "+ countVal);
+            res[countVal] = val;
+        }
+        // copy back to original array
+        for(int i=0; i<n; i++){
+            arr[i] = res[i];
+        }
+    }
+
+    public static void radixSort(int arr[]) {
+        int n = arr.length;
+        int maxEl = Integer.MIN_VALUE;
+
+        for(int i=0; i<n; i++){
+            if (arr[i]>maxEl) {
+                maxEl = arr[i];
+
+            }
+        }
+        if (maxEl==Integer.MIN_VALUE) {
+            System.out.println("Empty value");
+            return;
+        }
+
+        for(int digit=1; maxEl/digit>0; digit*=10){
+            countingSortWithDigit(arr, digit);
         }
     }
 }
