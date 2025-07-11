@@ -281,15 +281,18 @@ public class SortingAlgorithms {
             int index = arr[i] - minEl;
             pigeonHole[index]++;
         }
-
+        printArray(pigeonHole, " pigeonHole array");
         int insertionIndex = 0;
         //fill the original array
         for (int j=0; j<size; j++){
+            printArray(pigeonHole, " start of loop");
             while (pigeonHole[j] > 0) {
                 arr[insertionIndex] = j+minEl;
                 insertionIndex++;
                 pigeonHole[j]--;
             }
+            printArray(arr, " original array after update");
+            printArray(pigeonHole, " end of loop");
         }
     }
 }
