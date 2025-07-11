@@ -25,8 +25,12 @@ public class SortingAlgorithms {
         // int res[] = countingSort(arr);
         // printArray(res, " Sorted array");
         
+        // printArray(arr, " Original array");
+        // radixSort(arr);
+        // printArray(arr, " Sorted array");
+        
         printArray(arr, " Original array");
-        radixSort(arr);
+        pigeonholeSort(arr);
         printArray(arr, " Sorted array");
     }
 
@@ -278,10 +282,13 @@ public class SortingAlgorithms {
             pigeonHole[index]++;
         }
 
+        int insertionIndex = 0;
         //fill the original array
         for (int j=0; j<size; j++){
             while (pigeonHole[j] > 0) {
-                
+                arr[insertionIndex] = j+minEl;
+                insertionIndex++;
+                pigeonHole[j]--;
             }
         }
     }
