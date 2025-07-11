@@ -250,4 +250,39 @@ public class SortingAlgorithms {
             countingSortWithDigit(arr, digit);
         }
     }
+
+    public static void pigeonholeSort(int arr[]){
+        int n = arr.length;
+        int maxEl = Integer.MIN_VALUE;
+        int minEl = Integer.MAX_VALUE;
+
+        for(int i=0; i<n; i++){
+            if (arr[i]>maxEl) {
+                maxEl = arr[i];
+            }
+            if (arr[i]<minEl) {
+                minEl = arr[i];
+            }
+        }
+        if (maxEl==Integer.MIN_VALUE || minEl==Integer.MAX_VALUE) {
+            System.out.println("Empty value");
+            return;
+        }
+
+        int size = maxEl-minEl+1;
+        int pigeonHole[] = new int[size];
+
+        // find the count
+        for (int i=0; i<n; i++){
+            int index = arr[i] - minEl;
+            pigeonHole[index]++;
+        }
+
+        //fill the original array
+        for (int j=0; j<size; j++){
+            while (pigeonHole[j] > 0) {
+                
+            }
+        }
+    }
 }
