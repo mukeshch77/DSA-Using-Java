@@ -1,6 +1,6 @@
 public class SortingAlgorithms {
     public static void main(String[] args) {
-        int arr[] = { 2, 7, 1, 5, 0, 1, 12 };
+        int arr[] = { 2, 7, 1, 5, 0, 1, 12, 18, 23, 27, 3, 11};
         // printArray(arr, " Original array");
         // insertionSort(arr);
         // printArray(arr, " Sorted array");
@@ -260,7 +260,7 @@ public class SortingAlgorithms {
         int maxEl = Integer.MIN_VALUE;
         int minEl = Integer.MAX_VALUE;
 
-        for(int i=0; i<n; i++){
+        for(int i = 0; i < n; i++){
             if (arr[i]>maxEl) {
                 maxEl = arr[i];
             }
