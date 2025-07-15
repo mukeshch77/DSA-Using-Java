@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MyString {
     public static void main(String[] args) {
         // String name = "Mukesh";
@@ -63,10 +65,10 @@ public class MyString {
         // System.out.println(name4 == name2);
         // System.out.println(name1 == name4);
 
-        String name1 = new String("Mukesh");
-        String name2 = new String("Mukesh");
-        String name3 = new String("Mukesh");
-        String name4 = name1;
+        // String name1 = new String("Mukesh");
+        // String name2 = new String("Mukesh");
+        // String name3 = new String("Mukesh");
+        // String name4 = name1;
 
         // System.out.println(name1 == name2);
         // System.out.println(name2 == name3);
@@ -74,10 +76,44 @@ public class MyString {
         // System.out.println(name4 == name2);
         // System.out.println(name1 == name4);
 
-        System.out.println(name1.equals(name2));
-        System.out.println(name2.equals(name3));
-        System.out.println(name3.equals(name4));
-        System.out.println(name4.equals(name2));
-        System.out.println(name1.equals(name4));
+        // System.out.println(name1.equals(name2));
+        // System.out.println(name2.equals(name3));
+        // System.out.println(name3.equals(name4));
+        // System.out.println(name4.equals(name2));
+        // System.out.println(name1.equals(name4));
+
+        // Scanner obj = new Scanner(System.in);
+        // System.out.println("Enter a word : ");
+        // String word = obj.next();
+        // System.out.println("Enter a line : ");
+        // String line = obj.nextLine();
+        // System.out.println("Enter a line : ");
+        // String line = obj.nextLine();
+        // System.out.println("Enter a word : ");
+        // String word = obj.next();
+
+        // System.out.println(" Word is "+ word);
+        // System.out.println(" Line is "+ line);
+
+        String str = "Mukesh Choudhary";
+        System.out.println(str.toLowerCase());
+        System.out.println(str);
+        System.out.println(str.toUpperCase());
+        System.out.println(str);
+
+        System.out.println(str.charAt(0));
+
+        System.out.println(str.indexOf('C'));
+        System.out.println(str.indexOf('c'));
+
+        System.out.println(str.lastIndexOf('h'));
+
+        System.out.println(str.length());
+
+        // to convert char array
+        char ch[] = str.toCharArray();
+        for(int i=0; i<ch.length; i++){
+            System.out.print(ch[i] + " ");
+        }
     }
 }
