@@ -95,25 +95,77 @@ public class MyString {
         // System.out.println(" Word is "+ word);
         // System.out.println(" Line is "+ line);
 
-        String str = "Mukesh Choudhary";
-        System.out.println(str.toLowerCase());
-        System.out.println(str);
-        System.out.println(str.toUpperCase());
-        System.out.println(str);
+        // String str = "Mukesh Choudhary";
+        // System.out.println(str.toLowerCase());
+        // System.out.println(str);
+        // System.out.println(str.toUpperCase());
+        // System.out.println(str);
 
-        System.out.println(str.charAt(0));
+        // System.out.println(str.charAt(0));
 
-        System.out.println(str.indexOf('C'));
-        System.out.println(str.indexOf('c'));
+        // System.out.println(str.indexOf('C'));
+        // System.out.println(str.indexOf('c'));
 
-        System.out.println(str.lastIndexOf('h'));
+        // System.out.println(str.lastIndexOf('h'));
 
-        System.out.println(str.length());
+        // System.out.println(str.length());
 
-        // to convert char array
-        char ch[] = str.toCharArray();
-        for(int i=0; i<ch.length; i++){
-            System.out.print(ch[i] + " ");
-        }
+        // // to convert char array
+        // char ch[] = str.toCharArray();
+        // for(int i=0; i<ch.length; i++){
+        //     System.out.print(ch[i] + " ");
+        // }
+
+        // System.out.println("MUKESH".compareTo("MUK"));
+        // System.out.println("MUK".compareTo("MUKESH"));
+        // System.out.println("MUKESH".compareTo("MUKESH"));
+        // System.out.println("MUK".compareTo("ESH"));
+
+        // System.out.println("       Mukesh          ");
+        // System.out.println("       Mukesh          ".trim());
+
+        // System.out.println("Mukesh Choudhary".startsWith("Mukesh"));
+        // System.out.println("Mukesh Choudhary".startsWith("mukesh"));
+        // System.out.println("Mukesh Choudhary".startsWith("MuKesh"));
+        
+        // System.out.println("Mukesh Choudhary".endsWith("ary"));
+        // System.out.println("Mukesh Choudhary".endsWith("ary "));
+
+        // System.out.println("Mukesh".substring(3,5));
+
+
+        // String myLocations = "hyderabad, chennai, bangaluru, noida, pune";
+
+        // String myLocList[] = myLocations.split(",");
+        // for(int i=0; i<myLocList.length; i++){
+        //     System.out.println(myLocList[i]);
+        // }
+
+        // String email1 = "mukeshch1767@gmail.com";
+        // String email2 = "random1234@hotmail.com";
+
+        // String emailArr[] = email2.split("@");
+        // String lastPart = emailArr[emailArr.length-1];
+        // int dotIndex = lastPart.lastIndexOf('.');
+        // System.out.println(lastPart.substring(0, dotIndex));
+
+        StringBuilder name1 = new StringBuilder("Mukesh");
+        StringBuilder name2 = new StringBuilder("Mukesh");
+        StringBuilder name3 = new StringBuilder("Mukesh");
+        StringBuilder name4 = name1;
+
+        System.out.println(name1 == name2);
+        System.out.println(name2 == name3);
+        System.out.println(name3 == name4);
+        System.out.println(name4 == name2);
+        System.out.println(name1 == name4);
+
+        name4.append("Choudhary");
+
+        System.out.println(name1 == name2);
+        System.out.println(name2 == name3);
+        System.out.println(name3 == name4);
+        System.out.println(name4 == name2);
+        System.out.println(name1 == name4);
     }
 }
