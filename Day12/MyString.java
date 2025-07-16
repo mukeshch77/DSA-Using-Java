@@ -82,7 +82,7 @@ public class MyString {
         // System.out.println(name4.equals(name2));
         // System.out.println(name1.equals(name4));
 
-        // Scanner obj = new Scanner(System.in);
+        Scanner obj = new Scanner(System.in);
         // System.out.println("Enter a word : ");
         // String word = obj.next();
         // System.out.println("Enter a line : ");
@@ -141,13 +141,13 @@ public class MyString {
         //     System.out.println(myLocList[i]);
         // }
 
-        // String email1 = "mukeshch1767@gmail.com";
-        // String email2 = "random1234@hotmail.com";
+        String email1 = "mukeshch1767@gmail.com";
+        String email2 = "random1234@hotmail.com";
 
-        // String emailArr[] = email2.split("@");
-        // String lastPart = emailArr[emailArr.length-1];
-        // int dotIndex = lastPart.lastIndexOf('.');
-        // System.out.println(lastPart.substring(0, dotIndex));
+        String emailArr[] = email2.split("@");
+        String lastPart = emailArr[emailArr.length-1];
+        int dotIndex = lastPart.lastIndexOf('.');
+        System.out.println(lastPart.substring(0, dotIndex));
 
         StringBuilder name1 = new StringBuilder("Mukesh");
         StringBuilder name2 = new StringBuilder("Mukesh");
@@ -167,5 +167,6 @@ public class MyString {
         System.out.println(name3 == name4);
         System.out.println(name4 == name2);
         System.out.println(name1 == name4);
+
     }
 }
