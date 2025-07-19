@@ -143,6 +143,7 @@ public class MyString {
 
         String email1 = "mukeshch1767@gmail.com";
         String email2 = "random1234@hotmail.com";
+        String email3 = "name1234@outlook.com";
 
         String emailArr[] = email2.split("@");
         String lastPart = emailArr[emailArr.length-1];
