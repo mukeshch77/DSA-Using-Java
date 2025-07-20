@@ -141,14 +141,14 @@ public class MyString {
         //     System.out.println(myLocList[i]);
         // }
 
-        String email1 = "mukeshch1767@gmail.com";
-        String email2 = "random1234@hotmail.com";
-        String email3 = "name1234@outlook.com";
+        // String email1 = "mukeshch1767@gmail.com";
+        // String email2 = "random1234@hotmail.com";
+        // String email3 = "name1234@outlook.com";
 
-        String emailArr[] = email2.split("@");
-        String lastPart = emailArr[emailArr.length-1];
-        int dotIndex = lastPart.lastIndexOf('.');
-        System.out.println(lastPart.substring(0, dotIndex));
+        // String emailArr[] = email2.split("@");
+        // String lastPart = emailArr[emailArr.length-1];
+        // int dotIndex = lastPart.lastIndexOf('.');
+        // System.out.println(lastPart.substring(0, dotIndex));
 
         StringBuilder name1 = new StringBuilder("Mukesh");
         StringBuilder name2 = new StringBuilder("Mukesh");
@@ -162,6 +162,7 @@ public class MyString {
         System.out.println(name1 == name4);
 
         name4.append("Choudhary");
+        name4.append("ji");
 
         System.out.println(name1 == name2);
         System.out.println(name2 == name3);
