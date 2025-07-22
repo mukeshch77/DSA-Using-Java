@@ -1,6 +1,7 @@
 // Array Impl
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class MyStack {
     int stack[];
@@ -96,5 +97,13 @@ public class MyStack {
         stack.pop();
         stack.printStack();
         System.out.println("Peek : "+ stack.peek());
+
+        // JC Stack 
+        Stack<Integer> myClass = new Stack<>();
+        myClass.peek();
+        myClass.push(7);
+        myClass.pop();
+        myClass.size();
+        myClass.isEmpty();
     }
 }
