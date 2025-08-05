@@ -50,24 +50,42 @@ public class LongestValidParentheses {
 
     // Optimal solution 
     public int longestValidParentheses(String s) {
-        // Remove all valid parentheses
         Stack<Integer> stack = new Stack<>();
-        removeValidParentheses(s, stack);
-        
-        // If stack is empty then there were no invalid parentheses so return len :
-        if (stack.isEmpty()) {
-            return s.length();
-        }
-
-        ArrayList<Integer> arr = new ArrayList<>();
-        fromArrayOfInvalidIndexes(arr, stack, s);
-
-        // Find max difference between two invalid parentheses
         int max = 0;
-        for(int i=1; i<arr.size(); i++){
-            int prev = arr.get(i-1);
-            max = Math.max(max, arr.get(i) - prev-1);
-        }
+        stack.push(-1);
+        for(int i=0; i<s.length(); i++){
+            char ch = s.charAt(i);
+            if (ch == '(') {
+                stack.push(i);// index
+            }else{
+                stack.pop();
+                if (stack.isEmpty()) {
+                    stack.push(i);
+                }else{
+                    max = Math.max(max, i - stack.peek());
+                }
+            }
+        } 
+        return max;
+    }
+    
+    public int longestValidParentheses(String s) {
+        Stack<Integer> stack = new Stack<>();
+        int max = 0;
+        stack.push(-1);
+        for(int i=0; i<s.length(); i++){
+            char ch = s.charAt(i);
+            if (ch == '(') {
+                stack.push(i);// index
+            }else{
+                stack.pop();
+                if (stack.isEmpty()) {
+                    stack.push(i);
+                }else{
+                    max = Math.max(max, i - stack.peek());
+                }
+            }
+        } 
         return max;
     }
 }
