@@ -149,23 +149,27 @@ public class MyList {
 
         // Stack
 
-        Stack<Integer> stack = new Stack<>();
+        // Stack<Integer> stack = new Stack<>();
 
-        stack.push(1);
-        stack.push(5);
-        stack.push(1);
-        stack.push(7);
-        stack.push(3);
-        stack.push(9);
+        // stack.push(1);
+        // stack.push(5);
+        // stack.push(1);
+        // stack.push(7);
+        // stack.push(3);
+        // stack.push(9);
 
-        System.out.println(stack);
+        // System.out.println(stack);
 
-        System.out.println(stack.peek());
-        System.out.println(stack);
+        // System.out.println(stack.peek());
+        // System.out.println(stack);
 
-        System.out.println(stack.pop());
-        System.out.println(stack);
-        System.out.println(stack.size());
+        // System.out.println(stack.pop());
+        // System.out.println(stack);
+        // System.out.println(stack.size());
+
+        Queue<Integer> que = new Queue<Integer>() {
+            
+        };
     }
 }
 
