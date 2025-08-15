@@ -158,6 +158,8 @@ public class MyList {
         stack.push(3);
         stack.push(9);
         stack.push(11);
+        stack.push(18);
+        stack.push(21);
 
         System.out.println(stack);
 
@@ -166,6 +168,8 @@ public class MyList {
 
         System.out.println(stack.pop());
         System.out.println(stack);
+        System.out.println(stack.pop());
+        System.out.println(stack.size());
         System.out.println(stack.pop());
         System.out.println(stack.size());
 
