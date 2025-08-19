@@ -191,8 +191,36 @@ public class MyList {
 
 
         // here some additional operation are available, and nothing difference between these
-        Deque<Integer> que = new ArrayDeque<>();
+        // Deque<Integer> que = new ArrayDeque<>();
         // Deque<Integer> que = new LinkedList<>();
+
+        // que.offer(2);
+        // que.offer(5);
+        // que.offer(7);
+        // que.offer(1);
+        // que.offer(8);
+
+        // System.out.println(que);
+        // System.out.println(que.peek());
+        // System.out.println(que.poll());
+        // System.out.println(que);
+
+        // System.out.println(que.offerFirst(9));
+        // System.out.println(que.peekFirst());
+        // System.out.println(que.peekLast());
+        // System.out.println(que);
+        
+        // System.out.println(que.offerLast(10));
+        // System.out.println(que.poll());
+        // System.out.println(que);
+        
+        // System.out.println(que.pollFirst());
+        // System.out.println(que.peekLast());
+        // System.out.println(que.poll());
+        // System.out.println(que);
+
+
+        Queue<Integer> que = new PriorityQueue<>(); // heap
 
         que.offer(2);
         que.offer(5);
@@ -201,25 +229,9 @@ public class MyList {
         que.offer(8);
 
         System.out.println(que);
-        // System.out.println(que.peek());
-        // System.out.println(que.poll());
-        // System.out.println(que);
-
-        System.out.println(que.offerFirst(9));
-        System.out.println(que.peekFirst());
-        System.out.println(que.peekLast());
-        System.out.println(que);
-        
-        System.out.println(que.offerLast(10));
+        System.out.println(que.peek());
         System.out.println(que.poll());
         System.out.println(que);
-        
-        System.out.println(que.pollFirst());
-        System.out.println(que.peekLast());
-        System.out.println(que.poll());
-        System.out.println(que);
-
-
     }
 }
 
