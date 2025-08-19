@@ -220,7 +220,9 @@ public class MyList {
         // System.out.println(que);
 
 
-        Queue<Integer> que = new PriorityQueue<>(); // heap
+        // Queue<Integer> que = new PriorityQueue<>(Comparator.reverseOrder()); // heap
+        Queue<Integer> que = new PriorityQueue<>(Collections.reverseOrder()); // heap
+        // Queue<Integer> que = new PriorityQueue<>();
 
         que.offer(2);
         que.offer(5);
@@ -232,6 +234,14 @@ public class MyList {
         System.out.println(que.peek());
         System.out.println(que.poll());
         System.out.println(que);
+
+        List<Integer> list = new ArrayList<>();
+        list.add(7);
+        list.add(1);
+        list.add(5);
+
+        Collections.sort(list);
+        System.out.println(list);
     }
 }
 
