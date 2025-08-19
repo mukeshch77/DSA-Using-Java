@@ -149,33 +149,61 @@ public class MyList {
 
         // Stack
 
-        Stack<Integer> stack = new Stack<>();
+        // Stack<Integer> stack = new Stack<>();
 
-        stack.push(1);
-        stack.push(5);
-        stack.push(1);
-        stack.push(7);
-        stack.push(3);
-        stack.push(9);
-        stack.push(11);
-        stack.push(18);
-        stack.push(21);
+        // stack.push(1);
+        // stack.push(5);
+        // stack.push(1);
+        // stack.push(7);
+        // stack.push(3);
+        // stack.push(9);
+        // stack.push(11);
+        // stack.push(18);
+        // stack.push(21);
 
-        System.out.println(stack);
+        // System.out.println(stack);
 
-        System.out.println(stack.peek());
-        System.out.println(stack);
+        // System.out.println(stack.peek());
+        // System.out.println(stack);
 
-        System.out.println(stack.pop());
-        System.out.println(stack);
-        System.out.println(stack.pop());
-        System.out.println(stack.size());
-        System.out.println(stack.pop());
-        System.out.println(stack.size());
+        // System.out.println(stack.pop());
+        // System.out.println(stack);
+        // System.out.println(stack.pop());
+        // System.out.println(stack.size());
+        // System.out.println(stack.pop());
+        // System.out.println(stack.size());
 
-        // Queue<Integer> que = new Queue<Integer>() {
-            
-        // };
+        // Queue
+
+        // Queue<Integer> que = new LinkedList<>();
+        // Queue<Integer> que = new ArrayDeque<>();
+
+        // que.offer(2);
+        // que.offer(5);
+        // que.offer(7);
+        // que.offer(1);
+        // que.offer(8);
+
+        // System.out.println(que);
+        // System.out.println(que.peek());
+        // System.out.println(que.poll());
+        // System.out.println(que);
+
+
+        // here some additional operation are available, and nothing difference between these
+        Deque<Integer> que = new ArrayDeque<>();
+        // Deque<Integer> que = new LinkedList<>();
+
+        que.offer(2);
+        que.offer(5);
+        que.offer(7);
+        que.offer(1);
+        que.offer(8);
+
+        System.out.println(que);
+        System.out.println(que.peek());
+        System.out.println(que.poll());
+        System.out.println(que);
     }
 }
 
