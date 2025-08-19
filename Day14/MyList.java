@@ -201,9 +201,25 @@ public class MyList {
         que.offer(8);
 
         System.out.println(que);
-        System.out.println(que.peek());
+        // System.out.println(que.peek());
+        // System.out.println(que.poll());
+        // System.out.println(que);
+
+        System.out.println(que.offerFirst(9));
+        System.out.println(que.peekFirst());
+        System.out.println(que.peekLast());
+        System.out.println(que);
+        
+        System.out.println(que.offerLast(10));
         System.out.println(que.poll());
         System.out.println(que);
+        
+        System.out.println(que.pollFirst());
+        System.out.println(que.peekLast());
+        System.out.println(que.poll());
+        System.out.println(que);
+
+
     }
 }
 
