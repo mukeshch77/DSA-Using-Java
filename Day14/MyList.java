@@ -229,9 +229,13 @@ public class MyList {
         que.offer(7);
         que.offer(1);
         que.offer(8);
+        que.offer(3);
+        que.offer(11);
 
         System.out.println(que);
         System.out.println(que.peek());
+        System.out.println(que.poll());
+        System.out.println(que);
         System.out.println(que.poll());
         System.out.println(que);
 
