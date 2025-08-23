@@ -243,6 +243,8 @@ public class MyList {
         list.add(7);
         list.add(1);
         list.add(5);
+        list.add(9);
+        list.add(4);
 
         Collections.sort(list);
         System.out.println(list);
