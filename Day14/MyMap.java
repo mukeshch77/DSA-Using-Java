@@ -8,7 +8,9 @@ public class MyMap {
 
         map.put(1, "Mukesh");
         map.put(2, "Aman");
-        map.put(1, "Simran");
+        System.out.println(map);
+        map.putIfAbsent(1, "Simran");
+        System.out.println(map);
         map.put(1, "Anshul");
 
         System.out.println(map);
