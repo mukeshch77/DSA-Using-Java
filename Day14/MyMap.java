@@ -30,5 +30,6 @@ public class MyMap {
 
         System.out.println(map.containsKey(3));
         System.out.println(map.containsValue("Mukesh"));
+        System.out.println(map.containsKey(3));
     }
 }
