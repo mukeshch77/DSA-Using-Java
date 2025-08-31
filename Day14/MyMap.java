@@ -27,9 +27,10 @@ public class MyMap {
         System.out.println(map.get(5));
         System.out.println(map.getOrDefault(5, "No one"));
         System.out.println(map.getOrDefault(1, "No one"));
-
+        
         System.out.println(map.containsKey(3));
         System.out.println(map.containsValue("Mukesh"));
-        System.out.println(map.containsKey(3));
+        System.out.println(map.containsKey(2));
+        System.out.println(map.get(4));
     }
 }
