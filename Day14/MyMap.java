@@ -20,6 +20,7 @@ public class MyMap {
         map.put(2, "Aman");
         map.put(3, "Simran");
         map.put(4, "Anshul");
+        map.put(2, "Akash");
         
         System.out.println(map);
 
