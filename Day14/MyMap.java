@@ -21,6 +21,7 @@ public class MyMap {
         map.put(3, "Simran");
         map.put(1, "Anshul");
         map.put(2, "Aakash");
+        map.put(1, "Ravi");
         
         System.out.println(map);
 
