@@ -232,12 +232,12 @@ public class MyList {
         // que.offer(3);
         // que.offer(11);
 
-        System.out.println(que);
-        System.out.println(que.peek());
-        System.out.println(que.poll());
-        System.out.println(que);
-        System.out.println(que.poll());
-        System.out.println(que);
+        // System.out.println(que);
+        // System.out.println(que.peek());
+        // System.out.println(que.poll());
+        // System.out.println(que);
+        // System.out.println(que.poll());
+        // System.out.println(que);
 
         List<Integer> list = new ArrayList<>();
         list.add(7);
@@ -245,6 +245,7 @@ public class MyList {
         list.add(5);
         list.add(9);
         list.add(4);
+        list.add(2);
 
         Collections.sort(list);
         System.out.println(list);
